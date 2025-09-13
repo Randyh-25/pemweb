@@ -5,32 +5,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GoodGameGone</title>
 </head>
+
+<!-- 
+    Struktur halaman ini sudah menggunakan elemen-elemen semantik HTML5
+    untuk memisahkan setiap bagian konten dengan jelas.
+    Mulai dari header, navigasi, konten utama, hingga footer.
+    Penggunaan heading (h1-h3) juga dibuat terstruktur.
+-->
+
 <body style="background-color: #f9f9f9; color: #222;">
+    <!-- Bagian Header: Berisi judul utama (h1) dan logo situs. Ini adalah kepala dari halaman web. -->
     <header style="background-color: #333; color: white; padding: 20px; text-align: center;">
         <img src="images/logo.png" alt="GoodGameGone Logo" style="height: 80px; display: block; margin: 0 auto; border-radius: 50px;">
         <h1>GoodGameGone</h1>
         <p><i>Portal Berita Game</i></p>
     </header>
+
+    <!-- Bagian Navigasi (nav): Kumpulan link untuk berpindah antar bagian halaman. -->
     <nav style="background-color: #555; padding: 10px; text-align: center;">
         <a href="#beranda" style="color: white; text-decoration: none; padding: 10px 15px;">Beranda</a>
         <a href="#berita" style="color: white; text-decoration: none; padding: 10px 15px;">Berita</a>
         <a href="#review" style="color: white; text-decoration: none; padding: 10px 15px;">Review</a>
         <a href="#kontak" style="color: white; text-decoration: none; padding: 10px 15px;">Kontak</a>
     </nav>
+
+    <!-- Bagian Main: Konten utama dari halaman ini, membungkus semua bagian penting seperti berita dan review. -->
     <main>
+        <!-- Penggunaan Table untuk Layout: Halaman ini menggunakan tabel untuk membagi layout utama menjadi dua kolom, 
+             yaitu area konten utama (75%) dan sidebar (25%). -->
         <table style="width: 100%; border-spacing: 0;">
             <tr style="vertical-align: top;">
                 <td style="width: 75%; padding-right: 20px;">
+                    <!-- Section: Setiap bagian konten yang logis (seperti Beranda, Berita, Review) dibungkus dalam tag <section>. -->
                     <section id="beranda" style="padding: 20px;">
+                        <!-- Heading Terstruktur: Judul setiap section menggunakan h2, yang merupakan sub-heading dari h1 di header. -->
                         <h2>Selamat Datang di GoodGameGone</h2>
                         <p>Portal berita game terupdate dan terpercaya.</p>
                     </section>
 
                     <section id="berita" style="padding: 20px; background-color: #eee;">
                         <h2>Berita Terbaru</h2>
+                        <!-- Table untuk Konten: Tabel juga dipakai di sini untuk merapikan tampilan beberapa artikel berita agar sejajar. -->
                         <table style="width: 100%; border-spacing: 15px; border-collapse: separate;">
                             <tr style="vertical-align: top;">
                                 <td style="width: 33.33%;">
+                                    <!-- Article: Setiap item berita atau review merupakan konten mandiri, sehingga dibungkus dengan tag <article>. -->
                                     <article>
                                         <img src="images/news/a1.jpg" alt="Genshin Impact Update" style="width: 100%; height: 180px; object-fit: cover;">
                                         <header>
@@ -124,6 +143,7 @@
                         <p>Informasi kontak dan formulir.</p>
                     </section>
                 </td>
+                <!-- Bagian Aside: Konten tambahan atau sampingan yang relevan dengan konten utama, seperti daftar game populer. -->
                 <td style="width: 25%; padding: 20px; background-color: #f0f0f0;">
                     <aside>
                         <h3>Game Populer</h3>
@@ -148,6 +168,7 @@
         </table>
     </main>
 
+    <!-- Bagian Footer: Kaki dari halaman web, biasanya berisi info hak cipta atau kontak. -->
     <footer style="background-color: #333; color: white; padding: 10px; text-align: center;">
         <p>&copy; 2025 GoodGameGone. All rights reserved.</p>
     </footer>
