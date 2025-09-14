@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GoodGameGone</title>
+    <title>Profil Institut Teknologi Sumatera</title>
 </head>
 
 <!-- 
@@ -13,164 +13,227 @@
     Penggunaan heading (h1-h3) juga dibuat terstruktur.
 -->
 
-<body style="background-color: #f9f9f9; color: #222;">
-    <!-- Bagian Header: Berisi judul utama (h1) dan logo situs. Ini adalah kepala dari halaman web. -->
-    <header style="background-color: #333; color: white; padding: 20px; text-align: center;">
-        <img src="images/logo.png" alt="GoodGameGone Logo" style="height: 80px; display: block; margin: 0 auto; border-radius: 50px;">
-        <h1>GoodGameGone</h1>
-        <p><i>Portal Berita Game</i></p>
+<body style="background-color: #f4f7f6; color: #333; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0;">
+    <!-- Bagian Header: Menggunakan warna biru tua sebagai identitas baru yang modern. -->
+    <header style="background-color: #004A7F; color: white; padding: 20px 40px; text-align: center;">
+        <img src="images/logo.png" alt="Logo ITERA" style="height: 70px; display: block; margin: 0 auto 10px auto; border-radius: 8px;">
+        <h1 style="margin: 0; font-size: 2.5em;">Institut Teknologi Sumatera</h1>
+        <p style="margin: 5px 0 0 0; font-style: italic; opacity: 0.9;">Smart, Friendly, and Forest Campus</p>
     </header>
 
-    <!-- Bagian Navigasi (nav): Kumpulan link untuk berpindah antar bagian halaman. -->
-    <nav style="background-color: #555; padding: 10px; text-align: center;">
-        <a href="#beranda" style="color: white; text-decoration: none; padding: 10px 15px;">Beranda</a>
-        <a href="#berita" style="color: white; text-decoration: none; padding: 10px 15px;">Berita</a>
-        <a href="#review" style="color: white; text-decoration: none; padding: 10px 15px;">Review</a>
-        <a href="#kontak" style="color: white; text-decoration: none; padding: 10px 15px;">Kontak</a>
+    <!-- Bagian Navigasi (nav): Dibuat lebih kontras dengan latar belakang lebih gelap. -->
+    <nav style="background-color: #002742; padding: 12px; text-align: center; border-bottom: 3px solid #FDB913;">
+        <a href="#tentang" style="color: white; text-decoration: none; padding: 12px 20px; font-weight: bold;">Tentang ITERA</a>
+        <a href="#akademik" style="color: white; text-decoration: none; padding: 12px 20px; font-weight: bold;">Akademik</a>
+        <a href="#prestasi" style="color: white; text-decoration: none; padding: 12px 20px; font-weight: bold;">Prestasi</a>
+        <a href="#galeri" style="color: white; text-decoration: none; padding: 12px 20px; font-weight: bold;">Galeri</a>
+        <a href="#kontak" style="color: white; text-decoration: none; padding: 12px 20px; font-weight: bold;">Kontak</a>
     </nav>
 
-    <!-- Bagian Main: Konten utama dari halaman ini, membungkus semua bagian penting seperti berita dan review. -->
+    <!-- Bagian Main: Konten utama dari halaman ini. -->
     <main>
-        <!-- Penggunaan Table untuk Layout: Halaman ini menggunakan tabel untuk membagi layout utama menjadi dua kolom, 
-             yaitu area konten utama (75%) dan sidebar (25%). -->
-        <table style="width: 100%; border-spacing: 0;">
+        <!-- Layout utama menggunakan table. Padding ditambahkan di sekelilingnya. -->
+        <table style="width: 100%; border-spacing: 0; padding: 20px;">
             <tr style="vertical-align: top;">
-                <td style="width: 75%; padding-right: 20px;">
-                    <!-- Section: Setiap bagian konten yang logis (seperti Beranda, Berita, Review) dibungkus dalam tag <section>. -->
-                    <section id="beranda" style="padding: 20px;">
-                        <!-- Heading Terstruktur: Judul setiap section menggunakan h2, yang merupakan sub-heading dari h1 di header. -->
-                        <h2>Selamat Datang di GoodGameGone</h2>
-                        <p>Portal berita game terupdate dan terpercaya.</p>
+                <!-- Kolom konten utama -->
+                <td style="width: 75%; padding-right: 30px;">
+                    
+                    <section id="tentang" style="padding: 20px; background-color: #ffffff; border-radius: 8px; margin-bottom: 20px; box-shadow: 0 2px 5px rgba(0,0,0,0.05);">
+                        <h2>Selamat Datang di Kampus Harapan Bangsa</h2>
+                        <p>Institut Teknologi Sumatera (ITERA) adalah sebuah perguruan tinggi negeri yang berlokasi di Provinsi Lampung. ITERA didirikan untuk memenuhi kebutuhan sumber daya manusia di bidang sains dan teknologi, serta untuk mempercepat pembangunan di Pulau Sumatera dan Indonesia.</p>
                     </section>
 
-                    <section id="berita" style="padding: 20px; background-color: #eee;">
-                        <h2>Berita Terbaru</h2>
-                        <!-- Table untuk Konten: Tabel juga dipakai di sini untuk merapikan tampilan beberapa artikel berita agar sejajar. -->
-                        <table style="width: 100%; border-spacing: 15px; border-collapse: separate;">
+                    <section id="akademik" style="padding: 20px; background-color: #ffffff; border-radius: 8px; margin-bottom: 20px; box-shadow: 0 2px 5px rgba(0,0,0,0.05);">
+                        <h2>Informasi Akademik</h2>
+                        <p>ITERA menyelenggarakan pendidikan tinggi melalui berbagai jurusan dan program studi yang relevan dengan kebutuhan industri dan pembangunan nasional.</p>
+                        
+                        <table style="width: 100%; border-spacing: 15px; border-collapse: separate; margin-top: 20px;">
                             <tr style="vertical-align: top;">
-                                <td style="width: 33.33%;">
-                                    <!-- Article: Setiap item berita atau review merupakan konten mandiri, sehingga dibungkus dengan tag <article>. -->
+                                <!-- Article dibuat seperti kartu dengan shadow dan border-radius untuk tampilan modern. -->
+                                <td style="width: 33.33%; background-color: #f8f9fa; padding: 15px; border-radius: 8px; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
                                     <article>
-                                        <img src="images/news/a1.jpg" alt="Genshin Impact Update" style="width: 100%; height: 180px; object-fit: cover;">
-                                        <header>
-                                            <h3>Update Terbaru Game "Genshin Impact"</h3>
-                                            <p><small>Ditulis oleh Randy Hendriyawan | 12 September 2025</small></p>
+                                        <img src="images/news/a1.jpg" alt="Peresmian Gedung Baru" style="width: 100%; height: 160px; object-fit: cover; border-radius: 6px;">
+                                        <header style="margin-top: 10px;">
+                                            <h3 style="margin: 0 0 5px 0;">Fasilitas Modern</h3>
+                                            <p style="margin: 0; font-size: 0.8em; color: #666;"><small>Diresmikan pada 12 September 2025</small></p>
                                         </header>
-                                        <p>
-                                            Game RPG populer <b>Genshin Impact</b> resmi merilis patch terbaru dengan 
-                                            berbagai fitur menarik. Pemain kini bisa menjelajahi region baru bernama 
-                                            <i>Fontaine</i>.
+                                        <p style="font-size: 0.9em;">
+                                            ITERA terus membangun <b>fasilitas modern</b> untuk mendukung riset dan praktikum mahasiswa.
                                         </p>
-                                        <footer>
-                                            <p><i>Kategori: RPG, Update</i></p>
-                                        </footer>
                                     </article>
                                 </td>
-                                <td style="width: 33.33%;">
+                                <td style="width: 33.33%; background-color: #f8f9fa; padding: 15px; border-radius: 8px; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
                                     <article>
-                                        <img src="images/news/a2.png" alt="Elden Ring DLC" style="width: 100%; height: 180px; object-fit: cover;">
-                                        <header>
-                                            <h3>DLC "Shadow of the Erdtree" untuk Elden Ring</h3>
-                                            <p><small>Ditulis oleh Andi Saputra | 12 September 2025</small></p>
+                                        <img src="images/news/a2.jpg" alt="Wisuda ITERA" style="width: 100%; height: 160px; object-fit: cover; border-radius: 6px;">
+                                        <header style="margin-top: 10px;">
+                                            <h3 style="margin: 0 0 5px 0;">Mencetak Lulusan Unggul</h3>
+                                            <p style="margin: 0; font-size: 0.8em; color: #666;"><small>Wisuda ke-25 pada 12 September 2025</small></p>
                                         </header>
-                                        <p>
-                                            Game aksi petualangan <b>Elden Ring</b> mendapatkan ekspansi besar. Pemain kini bisa
-                                            menjelajahi area baru dan menghadapi musuh-musuh yang lebih kuat.
+                                        <p style="font-size: 0.9em;">
+                                            ITERA secara rutin meluluskan <b>ratusan wisudawan</b> yang siap berkontribusi untuk bangsa.
                                         </p>
-                                        <footer>
-                                            <p><i>Kategori: Aksi, DLC</i></p>
-                                        </footer>
                                     </article>
                                 </td>
-                                <td style="width: 33.33%;">
+                                <td style="width: 33.33%; background-color: #f8f9fa; padding: 15px; border-radius: 8px; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
                                     <article>
-                                        <img src="images/news/a3.jpg" alt="Valorant Champions Tour" style="width: 100%; height: 180px; object-fit: cover;">
-                                        <header>
-                                            <h3>Turnamen E-sports "Valorant Champions Tour" Diumumkan</h3>
-                                            <p><small>Ditulis oleh Citra Lestari | 13 September 2025</small></p>
+                                        <img src="images/news/a3.jpg" alt="Pengabdian Masyarakat" style="width: 100%; height: 160px; object-fit: cover; border-radius: 6px;">
+                                        <header style="margin-top: 10px;">
+                                            <h3 style="margin: 0 0 5px 0;">Pengabdian Masyarakat</h3>
+                                            <p style="margin: 0; font-size: 0.8em; color: #666;"><small>Program KKN pada 13 September 2025</small></p>
                                         </header>
-                                        <p>
-                                            Kompetisi e-sports besar untuk game FPS populer <b>Valorant</b> telah diumumkan. Tim dari seluruh dunia akan bersaing untuk total hadiah jutaan dolar.
+                                        <p style="font-size: 0.9em;">
+                                            Mahasiswa aktif dalam program pengabdian, seperti membangun <b>sistem air bersih</b> di desa binaan.
                                         </p>
-                                        <footer>
-                                            <p><i>Kategori: E-sports, Kompetisi</i></p>
-                                        </footer>
                                     </article>
                                 </td>
                             </tr>
                         </table>
                     </section>
 
-                    <section id="review" style="padding: 20px;">
-                        <h2>Review Game</h2>
+                    <section id="prestasi" style="padding: 20px; background-color: #ffffff; border-radius: 8px; margin-bottom: 20px; box-shadow: 0 2px 5px rgba(0,0,0,0.05);">
+                        <h2>Prestasi Mahasiswa</h2>
                         <table style="width: 100%; border-spacing: 15px; border-collapse: separate;">
                             <tr style="vertical-align: top;">
                                 <td style="width: 50%;">
                                     <article>
                                         <header>
-                                            <h3>Review Game "Genshin Impact"</h3>
-                                            <p><small>Ditulis oleh Budi Santoso | 12 September 2025</small></p>
+                                            <h3 style="margin-top: 0;">Tim Robotika ITERA Juara 1 Kontes Robot Nasional</h3>
+                                            <p style="font-size: 0.8em; color: #666;"><small>Oleh Budi Santoso | 12 September 2025</small></p>
                                         </header>
                                         <p>
-                                            <b>Genshin Impact</b> menawarkan dunia open-world yang luas dengan cerita yang menarik dan
-                                            sistem gacha yang adiktif. Grafik anime yang memukau dan soundtrack yang epik.
+                                            Tim <b>Robotika "Rajawali"</b> dari prodi Teknik Elektro berhasil meraih Juara 1 dalam Kontes Robot Indonesia (KRI) tingkat nasional.
                                         </p>
-                                        <footer>
-                                            <p><i>Kategori: RPG, Review</i></p>
-                                        </footer>
                                     </article>
                                 </td>
                                 <td style="width: 50%;">
                                     <article>
                                         <header>
-                                            <h3>Review Game "Elden Ring"</h3>
-                                            <p><small>Ditulis oleh Dewi Anggraini | 13 September 2025</small></p>
+                                            <h3 style="margin-top: 0;">Mahasiswa Arsitektur Menang Sayembara Desain Internasional</h3>
+                                            <p style="font-size: 0.8em; color: #666;"><small>Oleh Dewi Anggraini | 13 September 2025</small></p>
                                         </header>
                                         <p>
-                                            <b>Elden Ring</b> adalah game yang sangat menantang dengan sistem pertarungan yang dalam. Meskipun sulit, eksplorasi dunianya yang luas sangat memuaskan.
+                                            <b>Anisa Putri</b>, mahasiswi Arsitektur, memenangkan juara kedua dalam sayembara desain "Green Urban Space" di Singapura.
                                         </p>
-                                        <footer>
-                                            <p><i>Kategori: Aksi, Review</i></p>
-                                        </footer>
                                     </article>
                                 </td>
                             </tr>
                         </table>
                     </section>
 
-                    <section id="kontak" style="padding: 20px;">
+                    <section id="galeri" style="padding: 20px; background-color: #ffffff; border-radius: 8px; margin-bottom: 20px; box-shadow: 0 2px 5px rgba(0,0,0,0.05);">
+                        <h2>Galeri Kampus</h2>
+                        <table style="width: 100%; border-spacing: 15px; border-collapse: separate; text-align: center;">
+                            <tr style="vertical-align: top;">
+                                <td style="width: 50%;">
+                                    <img src="images/gallery/g1.jpg" alt="Gedung Asrama ITERA" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px;">
+                                    <p style="margin-top: 5px; font-size: 0.9em;">Gedung Asrama Mahasiswa</p>
+                                </td>
+                                <td style="width: 50%;">
+                                    <img src="images/gallery/g2.jpg" alt="Masjid Raya At-Tanwir ITERA" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px;">
+                                    <p style="margin-top: 5px; font-size: 0.9em;">Masjid Raya At-Tanwir</p>
+                                </td>
+                            </tr>
+                            <tr style="vertical-align: top;">
+                                <td style="width: 50%;">
+                                    <img src="images/gallery/g3.jpg" alt="Observatorium Astronomi ITERA" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px;">
+                                    <p style="margin-top: 5px; font-size: 0.9em;">Observatorium Astronomi (OAIL)</p>
+                                </td>
+                                <td style="width: 50%;">
+                                    <img src="images/gallery/g4.jpg" alt="Gerbang Utama ITERA" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px;">
+                                    <p style="margin-top: 5px; font-size: 0.9em;">Gerbang Utama ITERA</p>
+                                </td>
+                            </tr>
+                        </table>
+                    </section>
+
+                    <section id="kontak" style="padding: 20px; background-color: #ffffff; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.05);">
                         <h2>Kontak Kami</h2>
-                        <p>Informasi kontak dan formulir.</p>
+                        <p>Untuk informasi lebih lanjut, silakan hubungi kami melalui:</p>
+                        <p><strong>Alamat:</strong> Jl. Terusan Ryacudu, Way Huwi, Kec. Jati Agung, Kabupaten Lampung Selatan, Lampung 35365</p>
+                        <p><strong>Email:</strong> humas@itera.ac.id</p>
+                        <p><strong>Telepon:</strong> (0721) 8030188</p>
                     </section>
                 </td>
-                <!-- Bagian Aside: Konten tambahan atau sampingan yang relevan dengan konten utama, seperti daftar game populer. -->
-                <td style="width: 25%; padding: 20px; background-color: #f0f0f0;">
+                
+                <!-- Bagian Aside: Diberi background dan padding untuk memisahkannya dari konten utama. -->
+                <td style="width: 25%; padding: 20px; background-color: #e9ecef; border-radius: 8px;">
                     <aside>
-                        <h3>Game Populer</h3>
+                        <h3 style="margin-top: 0; color: #004A7F;">Program Studi Populer</h3>
                         <ul style="list-style: none; padding: 0;">
-                            <li style="padding: 5px 0;">Elden Ring</li>
-                            <li style="padding: 5px 0;">Genshin Impact</li>
-                            <li style="padding: 5px 0;">Valorant</li>
-                            <li style="padding: 5px 0;">Baldur's Gate 3</li>
-                            <li style="padding: 5px 0;">Helldivers 2</li>
+                            <li style="padding: 8px 0; border-bottom: 1px solid #ced4da;">Teknik Informatika</li>
+                            <li style="padding: 8px 0; border-bottom: 1px solid #ced4da;">Perencanaan Wilayah & Kota</li>
+                            <li style="padding: 8px 0; border-bottom: 1px solid #ced4da;">Teknik Sipil</li>
+                            <li style="padding: 8px 0; border-bottom: 1px solid #ced4da;">Arsitektur</li>
+                            <li style="padding: 8px 0;">Farmasi</li>
                         </ul>
-                        <hr>
-                        <h3>Kategori</h3>
+                        <hr style="border: none; border-top: 1px solid #ced4da; margin: 20px 0;">
+                        <h3 style="color: #004A7F;">Agenda Kampus</h3>
                         <ul style="list-style: none; padding: 0;">
-                            <li style="padding: 5px 0;">RPG</li>
-                            <li style="padding: 5px 0;">Aksi</li>
-                            <li style="padding: 5px 0;">E-sports</li>
-                            <li style="padding: 5px 0;">Strategi</li>
+                            <li style="padding: 8px 0;">Seminar Nasional Teknologi</li>
+                            <li style="padding: 8px 0;">Pekan Olahraga Mahasiswa</li>
+                            <li style="padding: 8px 0;">ITERA Fair 2025</li>
+                            <li style="padding: 8px 0;">Kuliah Umum Kewirausahaan</li>
                         </ul>
+                        <hr style="border: none; border-top: 1px solid #ced4da; margin: 20px 0;">
+                        <h3 style="color: #004A7F;">Jadwal Penting Akademik</h3>
+                        <table style="width: 100%; border-collapse: collapse; font-size: 0.9em; text-align: left;">
+                            <thead style="background-color: #004A7F; color: white;">
+                                <tr>
+                                    <th style="padding: 8px; font-weight: normal;">Kegiatan</th>
+                                    <th style="padding: 8px; font-weight: normal;">Tanggal</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr style="border-bottom: 1px solid #ced4da;">
+                                    <td style="padding: 8px;">Pendaftaran Ulang</td>
+                                    <td style="padding: 8px;">1-15 Agu</td>
+                                </tr>
+                                <tr style="border-bottom: 1px solid #ced4da;">
+                                    <td style="padding: 8px;">Awal Kuliah</td>
+                                    <td style="padding: 8px;">1 Sep</td>
+                                </tr>
+                                <tr style="border-bottom: 1px solid #ced4da;">
+                                    <td style="padding: 8px;">Ujian Tengah Semester</td>
+                                    <td style="padding: 8px;">20-31 Okt</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 8px;">Ujian Akhir Semester</td>
+                                    <td style="padding: 8px;">15-26 Des</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <hr style="border: none; border-top: 1px solid #ced4da; margin: 20px 0;">
+                        <h3 style="color: #004A7F;">Pusat Penelitian Unggulan</h3>
+                        <table style="width: 100%; border-collapse: collapse; font-size: 0.9em; text-align: left;">
+                            <thead style="background-color: #004A7F; color: white;">
+                                <tr>
+                                    <th style="padding: 8px; font-weight: normal;">Pusat Penelitian</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr style="border-bottom: 1px solid #ced4da;">
+                                    <td style="padding: 8px;">Energi Terbarukan</td>
+                                </tr>
+                                <tr style="border-bottom: 1px solid #ced4da;">
+                                    <td style="padding: 8px;">Mitigasi Bencana</td>
+                                </tr>
+                                <tr style="border-bottom: 1px solid #ced4da;">
+                                    <td style="padding: 8px;">Sains Data & AI</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 8px;">Teknologi Pangan</td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </aside>
                 </td>
             </tr>
         </table>
     </main>
 
-    <!-- Bagian Footer: Kaki dari halaman web, biasanya berisi info hak cipta atau kontak. -->
-    <footer style="background-color: #333; color: white; padding: 10px; text-align: center;">
-        <p>&copy; 2025 GoodGameGone. All rights reserved.</p>
+    <!-- Bagian Footer: Warna disesuaikan dengan navigasi untuk konsistensi. -->
+    <footer style="background-color: #002742; color: white; padding: 20px; text-align: center; font-size: 0.9em;">
+        <p style="margin: 0;">&copy; 2025 Institut Teknologi Sumatera. All rights reserved.</p>
     </footer>
 </body>
 </html>
